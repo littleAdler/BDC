@@ -1,0 +1,139 @@
+.collapsables{
+  position: fixed;
+  width: 200%;
+  height: 100%;
+
+}
+
+.collapsedmid{
+  position: relative;
+  float: left;
+  width: 16.67%;
+  height: 100%;
+
+  border-style: double;
+  border-width: medium;
+  background-color: #343a40;
+  opacity: 0.98;
+
+  /*set-up for hover */
+  -o-transition:.5s;
+ -ms-transition:.5s;
+ -moz-transition:.5s;
+ -webkit-transition:.5s;
+ transition:.5s;
+
+}
+
+.expandedmid{
+  position: relative;
+  float: left;
+  width:16.67%;
+  height: 100%;
+  border-style: double;
+  border-width: medium;
+  background-color: #343a40;
+  /*background-image: url(/images/gray_gradient.jpg);*/
+
+
+}
+
+.expandedmid:hover{
+  opacity: 1;
+}
+.collapsedmid:hover{
+  opacity: 1;
+}
+
+
+.d1{
+
+
+}
+.d2{
+
+
+}
+.d3{
+
+}
+.content{
+  position: relative;
+  text-align: center;
+  top: 20%;
+
+}
+.btncol{
+
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+#buttontext{
+    color: white;
+    position: relative;
+    font-weight: bold;
+
+}
+
+/*images for each of the button sections*/
+ #progress{
+   background-image: url(/images/icons/checkmark2.png);
+   background-size:cover;
+
+ }
+
+
+
+ #codes{
+
+ }
+
+ #schedule{
+
+ }
+
+/*Condensed content below the buttons*/
+
+.initDisplay{
+  bottom:  10px;
+  color: white;
+  height: 100px;
+
+}
+#classlvl{
+
+  top: 40px;
+  text-align: center;
+  padding: 20px;
+  height: 50px;
+}
+
+#strong{
+  position: relative;
+  padding-right: 10px;
+  text-align: center;
+  height: 40px;
+}
+
+.circle {
+  top: 0px;
+
+  text-align: center;
+	width: 200px;
+    margin: 6px 20px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+	vertical-align: top;
+	strong {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 45px;
+		font-size: 43px;
+	}
+}

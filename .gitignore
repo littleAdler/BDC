@@ -1,0 +1,5 @@
+/node_modules
+/connection_tools
+*.sql
+*.ddl
+npm-debug.log
