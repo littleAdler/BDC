@@ -1,6 +1,6 @@
 
 <link rel='stylesheet' href="/css/expansion.css">
-<link rel='stylesheet' href='/css/progress.css'>
+<link rel='stylesheet' href='/css/progress-expanded.css'>
 
 <div class="collapsables">
   <div id="d1" class='collapsedmid d1'>
@@ -9,13 +9,13 @@
     </div>
 
   </div>
-
+  <!--Initial progress display section-->
   <div id="d2" class='collapsedmid d2'>
     <div class='content'>
       <button id='progress'class='btn btn-primary btncol'><span id='buttontext'>Progress</span></button>
 
       <div class = 'initDisplay'>
-        <p id='classlvl'>Current Class: Level 1</p>
+        <p id='classlvl'>Current Class: <span id ="level"></span></p>
         <p>Bronze Sylibus Completion</p>
         <div class="circle" id="circle-a">
             <strong id="strong"></strong>
@@ -23,14 +23,15 @@
       </div>
 
     </div>
+    <!--Once the progress has been expanded display more content here-->
     <div class="expanded-content">
-
+      <strong>This is a display for the expanded content</strong>
 
     </div>
 
   </div>
 
-
+  <!--Initial schedule display section-->
   <div id = 'd3' class='collapsedmid d3'>
     <div class='content'>
       <button class='btn btn-primary btncol'>Schedule</button>
