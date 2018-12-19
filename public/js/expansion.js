@@ -4,11 +4,15 @@ $('.collapsedmid').click(function(){
     $(this).toggleClass('collapsedmid expandedmid');
     $( this ).animate({width:"44%"},2000,function(){
       //run on animation complete
+      if(this.id ==="d2" && $('.expanded-content').is(':hidden') ){
+        $('.expanded-content').fadeToggle("slow");
+      }
+
       });
       $('.content').fadeToggle("slow");
+
+
     if(this.id === "d1"){
-
-
 
 
       $('#d2').toggleClass('expandedmid collapsedmid');
@@ -44,6 +48,9 @@ $('.collapsedmid').click(function(){
     }
 
   }else if($(this).hasClass('expandedmid')){
+    if( $('.expanded-content').is(':visible')){
+      $('.expanded-content').fadeToggle("fast");
+    }
 
       $(this).toggleClass('expandedmid collapsedmid');
       $( this ).animate({width:"16.67%"},2000,function(){
@@ -53,6 +60,7 @@ $('.collapsedmid').click(function(){
         	$(this).find('strong').text(String(stepValue.toFixed(2)).substr(1));
         });
         $('.content').fadeToggle("slow");
+
       });
     if(this.id === "d1"){
       $('#d2').toggleClass('collapsedmid expandedmid');

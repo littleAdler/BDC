@@ -5,8 +5,11 @@ $('.collapsedmid').click(function(){
   $.get('/progress',function(data,status){
     //console.log(data);
     //console.log(status);
-    console.log(data[0].studentlevel);
+    console.log(data[0]);
     $('#level').text(data[0].studentlevel);
-
+    $('#level-exp').text(data[0].studentlevel);
+    $('#sid').text(data[0].studentid)
+    $('#name').text(data[0].studentname.toUpperCase());
   })
+
 });

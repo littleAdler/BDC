@@ -1,3 +1,14 @@
 .expanded-content{
   display: none;
+  padding-top: 50px;
+
+}
+
+#name{
+  font-size: 50px;
+}
+#level-exp{
+  font-size: 50px;
+  color: #f9ba25;
+
 }

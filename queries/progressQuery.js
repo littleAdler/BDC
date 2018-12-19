@@ -2,7 +2,7 @@ var pool= require('../connection_tools/connection_pool.js');
 
 
 function query(){
-  
+
 var promise = new Promise((resolve,reject)=>{
 //connect to db
 pool.connect(function(err,client,done){
@@ -12,7 +12,7 @@ pool.connect(function(err,client,done){
   }
   //query the databse
 
-  client.query('SELECT * FROM student',function(err,result){
+  client.query('SELECT * FROM student natural join taughtstep natural join attendance',function(err,result){
 
       if(err){
         done();
