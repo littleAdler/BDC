@@ -15,6 +15,7 @@ router.get('/progress',(req,res)=>{
 
   progress.query().then(function(result){
     res.send(result);
+
   },function(err){
     console.log(err);
   })

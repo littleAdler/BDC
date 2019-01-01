@@ -10,6 +10,9 @@ $('.collapsedmid').click(function(){
     $('#level-exp').text(data[0].studentlevel);
     $('#sid').text(data[0].studentid)
     $('#name').text(data[0].studentname.toUpperCase());
+
+    console.log(data)
+
   })
 
 });
